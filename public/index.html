@@ -23,7 +23,7 @@
 
         socket.emit('mensaje', { nombre: ' Venancio' });
         
-        socket.on('mensaje', function (payload) {
+        socket.on('nuevo-mensaje', function (payload) {
             console.log('Escuchamdo: ', payload);
         });
 
